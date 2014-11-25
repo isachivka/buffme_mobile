@@ -1,0 +1,1 @@
+(function(){$(".welcome_page .carusel").owlCarousel({singleItem:!0}),$(".uiswitch").click(function(){return $(this).toggleClass("active")}),$('[href="#toggle_menu"]').click(function(){return $("aside").toggleClass("active"),!1})}).call(this);
