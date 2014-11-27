@@ -63,6 +63,13 @@ body {
       vertical-align: -3px;
       margin: 0 0 0 10px;
     }
+    &.close1 {
+      width: 41px/2;
+      height: 41px/2;
+      background: url(../img/close1.png) no-repeat;
+      background-size: 100%;
+      display: block;
+    }
     &.wallet {
       width: 32px / 2;
       height: 32px / 2;
@@ -164,6 +171,13 @@ body {
       vertical-align: -13px/2;
       margin: 0 2px;
     }
+    &.hamb_big {
+      background: url('../img/hamb_big.png') no-repeat scroll top left;
+      width: 116px/2;
+      height: 99px/2;
+      background-size: 100%;
+      display: inline-block;
+    }
     &.check {
       background: url('../img/check.png') no-repeat scroll top left;
       width: 24px/2;
@@ -210,6 +224,10 @@ body {
       display: inline-block;
       vertical-align: -5px/2;
       margin: 0 17px/2 0 3px/2;
+      &.red {
+        background: url('../img/price_red.png') no-repeat scroll top left;
+        background-size: 100%;
+      }
     }
     &.timer {
       background: url('../img/timer.png') no-repeat scroll top left;
@@ -219,6 +237,10 @@ body {
       display: inline-block;
       vertical-align: -2px;
       margin: 0 17px/2 0 0;
+      &.red {
+        background: url('../img/timer_red.png') no-repeat scroll top left;
+        background-size: 100%;
+      }
     }
     &.p_count {
       background: url('../img/count.png') no-repeat scroll top left;
@@ -228,6 +250,10 @@ body {
       display: inline-block;
       vertical-align: -1px/2;
       margin: 0 24px/2 0 5px/2;
+      &.red {
+        background: url('../img/p_count_red.png') no-repeat scroll top left;
+        background-size: 100%;
+      }
     }
     &.hand {
       background: url('../img/hand.png') no-repeat;
@@ -323,6 +349,50 @@ body {
       top: -197px/2;
       left: 50%;
       margin: 0 0 0 -239px/4;
+    }
+    &.ul_check {
+      background: url('../img/ul_check.png') no-repeat;
+    }
+    &.ul_uncheck {
+      background: url('../img/ul_uncheck.png') no-repeat;
+    }
+    &.ul_check, &.ul_uncheck {
+      width: 33px/2;
+      height: 33px/2;
+      background-size: 100%;
+      display: block;
+    }
+    &.pop_line {
+      width: 546px/2;
+      height: 104px/2;
+      background: url('../img/pop_line.png') no-repeat;
+      background-size: 100%;
+      display: block;
+      margin: 4px auto 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 25px;
+      padding: 6px 0 0;
+    }
+    &.zv {
+      width: 605px/2;
+      height: 142px/2;
+      background: url('../img/zv.png') no-repeat;
+      background-size: 100%;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 12px 0 0 0;
+      font-size: 18px;
+      color: #ff4800;
+      text-transform: uppercase;
+      font-weight: bold;
+      span {
+        display: block;
+        font-size: 55px;
+        margin: -18px 0 0 0;
+      }
     }
   }
   a {
@@ -744,6 +814,7 @@ div.menu {
     width: 144px/2;
     float: left;
     margin: 0 0 10px;
+    border-radius: 5px;
   }
   ul.checklist {
     margin: -3px 0 10px 168px/2;
@@ -765,6 +836,9 @@ div.menu {
   a.btn_orange, a.btn_gray {
     width: 100%;
     clear: both;
+    &.mt {
+      margin: 10px 0 0 0;
+    }
   }
   div.reward {
     clear: both;
@@ -815,6 +889,50 @@ div.menu {
     &.date {
       font-size: 11px;
       color: #3f3f3f;
+    }
+  }
+}
+.restaurants_elem {
+  margin: 20px 0 0 0;
+  h2 {
+    font-size: 37px/2;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  ul {
+    li {
+      position: relative;
+      font-size: 15px;
+      color: #3f3f3f;
+      height: 30px;
+      line-height: 30px;
+      border-bottom: 1px solid #e5e5e5;
+      &:last-child {border: none;}
+      i.round {
+        width: 32px/2;
+        height: 32px/2;
+        display: inline-block;
+        border: 3px solid #fff;
+        border-radius: 20px;
+        margin: 0 15px 0 0;
+        vertical-align: -4px;
+        &.blue {border-color: #003aa5;}
+        &.red {border-color: #ec0d3c;}
+        &.green {border-color: #03ac2f;}
+      }
+      span {
+        float: right;
+        width: 162px/2;
+      }
+      b.r {
+        position: absolute;
+        display: block;
+        width: 16px/2;
+        height: 25px/2;
+        top: 50%;
+        right: 0;
+        margin: -25px/2/2 0 0 0;
+      }
     }
   }
 }
@@ -902,6 +1020,11 @@ aside {
   .popup {
     padding: 0 30px;
     color: #fff;
+    i.close1 {
+      position: absolute;
+      top: 56px/2;
+      left: 35px/2;
+    }
     .modw {
       text-align: center;
       color: #000;
@@ -926,6 +1049,98 @@ aside {
           width: 48%;
           &:first-child {float: left;}
           &:last-child {float: right;}
+        }
+      }
+    }
+    .multi {
+      margin: 0 -10px 0 0;
+      h2 {
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 26px;
+        margin: 13px 0 72px/2;
+      }
+      ul {
+        line-height: 33px/2;
+        div.icon {
+          float: left;
+          width: 52px/2;
+          padding: 2px 0 0 0;
+        }
+        li {
+          margin: 0 0 17px;
+        }
+        h4 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .achiv {
+      p {
+        text-align: center;
+        color: #ff4800;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 18px 0 0 0;
+      }
+    }
+    .zv_wrap {
+      margin: -5px -30px 0;
+    }
+    .buy {
+      padding: 20px 0 0 0;
+      color: #fff;
+      h2 {
+        font-size: 38px/2;
+        font-weight: bold;
+      }
+      p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 0 0 20px;
+      }
+      ul.checklist {
+        li {
+          color: #fff;
+          span {
+            color: #ff5a34;
+          }
+        }
+      }
+    }
+    .label {
+      font-size: 17px;
+      color: #ff4800;
+      margin: 0 -20px;
+      line-height: 22px;
+      text-align: center;
+      span {display: block;}
+      strong {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .pop_carusel {
+      .owl-controls {
+        margin: 5px 0 20px;
+        .owl-page {
+          span {
+            background: #fff;
+            width: 8px;
+            height: 8px;
+            margin: 0 6px;
+          }
+          &.active {
+            span {
+              background: none;
+              border: 1px solid #f19700;
+            }
+          }
         }
       }
     }

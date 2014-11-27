@@ -16,6 +16,7 @@ popups = () ->
     window.location.hash = pop.replace('#', '')
     $(pop).css('display', 'block')
     $(pop).addClass('open')
+    $('.pop_line').arctext({radius: 1000})
     $('body').css('overflow', 'hidden')
 
   close = (pop) ->
@@ -56,6 +57,9 @@ popups = () ->
 
 popups()
 $(".welcome_page .carusel").owlCarousel({
+  singleItem:true
+})
+$(".pop_carusel").owlCarousel({
   singleItem:true
 })
 $('.uiswitch').click ->

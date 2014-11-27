@@ -63,6 +63,13 @@ body i.icon.close {
   vertical-align: -3px;
   margin: 0 0 0 10px;
 }
+body i.icon.close1 {
+  width: 20.5px;
+  height: 20.5px;
+  background: url(../img/close1.png) no-repeat;
+  background-size: 100%;
+  display: block;
+}
 body i.icon.wallet {
   width: 16px;
   height: 16px;
@@ -164,6 +171,13 @@ body i.icon.hamb {
   vertical-align: -6.5px;
   margin: 0 2px;
 }
+body i.icon.hamb_big {
+  background: url('../img/hamb_big.png') no-repeat scroll top left;
+  width: 58px;
+  height: 49.5px;
+  background-size: 100%;
+  display: inline-block;
+}
 body i.icon.check {
   background: url('../img/check.png') no-repeat scroll top left;
   width: 12px;
@@ -211,6 +225,10 @@ body i.icon.price {
   vertical-align: -2.5px;
   margin: 0 8.5px 0 1.5px;
 }
+body i.icon.price.red {
+  background: url('../img/price_red.png') no-repeat scroll top left;
+  background-size: 100%;
+}
 body i.icon.timer {
   background: url('../img/timer.png') no-repeat scroll top left;
   width: 14px;
@@ -220,6 +238,10 @@ body i.icon.timer {
   vertical-align: -2px;
   margin: 0 8.5px 0 0;
 }
+body i.icon.timer.red {
+  background: url('../img/timer_red.png') no-repeat scroll top left;
+  background-size: 100%;
+}
 body i.icon.p_count {
   background: url('../img/count.png') no-repeat scroll top left;
   width: 8px;
@@ -228,6 +250,10 @@ body i.icon.p_count {
   display: inline-block;
   vertical-align: -0.5px;
   margin: 0 12px 0 2.5px;
+}
+body i.icon.p_count.red {
+  background: url('../img/p_count_red.png') no-repeat scroll top left;
+  background-size: 100%;
 }
 body i.icon.hand {
   background: url('../img/hand.png') no-repeat;
@@ -323,6 +349,51 @@ body i.icon.ok {
   top: -98.5px;
   left: 50%;
   margin: 0 0 0 -59.75px;
+}
+body i.icon.ul_check {
+  background: url('../img/ul_check.png') no-repeat;
+}
+body i.icon.ul_uncheck {
+  background: url('../img/ul_uncheck.png') no-repeat;
+}
+body i.icon.ul_check,
+body i.icon.ul_uncheck {
+  width: 16.5px;
+  height: 16.5px;
+  background-size: 100%;
+  display: block;
+}
+body i.icon.pop_line {
+  width: 273px;
+  height: 52px;
+  background: url('../img/pop_line.png') no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 4px auto 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 6px 0 0;
+}
+body i.icon.zv {
+  width: 302.5px;
+  height: 71px;
+  background: url('../img/zv.png') no-repeat;
+  background-size: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px 0 0 0;
+  font-size: 18px;
+  color: #ff4800;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body i.icon.zv span {
+  display: block;
+  font-size: 55px;
+  margin: -18px 0 0 0;
 }
 body a {
   color: #ec8d00;
@@ -796,6 +867,7 @@ div.menu a {
   width: 72px;
   float: left;
   margin: 0 0 10px;
+  border-radius: 5px;
 }
 .mission_elem ul.checklist {
   margin: -3px 0 10px 84px;
@@ -820,6 +892,10 @@ div.menu a {
 .mission_elem a.btn_gray {
   width: 100%;
   clear: both;
+}
+.mission_elem a.btn_orange.mt,
+.mission_elem a.btn_gray.mt {
+  margin: 10px 0 0 0;
 }
 .mission_elem div.reward {
   clear: both;
@@ -851,6 +927,7 @@ div.menu a {
   width: 72px;
   float: left;
   margin: 0 0 10px;
+  border-radius: 5px;
 }
 .shop_elem ul.checklist {
   margin: -3px 0 10px 84px;
@@ -875,6 +952,10 @@ div.menu a {
 .shop_elem a.btn_gray {
   width: 100%;
   clear: both;
+}
+.shop_elem a.btn_orange.mt,
+.shop_elem a.btn_gray.mt {
+  margin: 10px 0 0 0;
 }
 .shop_elem div.reward {
   clear: both;
@@ -923,6 +1004,56 @@ div.menu a {
 .news_elem p.date {
   font-size: 11px;
   color: #3f3f3f;
+}
+.restaurants_elem {
+  margin: 20px 0 0 0;
+}
+.restaurants_elem h2 {
+  font-size: 18.5px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.restaurants_elem ul li {
+  position: relative;
+  font-size: 15px;
+  color: #3f3f3f;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.restaurants_elem ul li:last-child {
+  border: none;
+}
+.restaurants_elem ul li i.round {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  margin: 0 15px 0 0;
+  vertical-align: -4px;
+}
+.restaurants_elem ul li i.round.blue {
+  border-color: #003aa5;
+}
+.restaurants_elem ul li i.round.red {
+  border-color: #ec0d3c;
+}
+.restaurants_elem ul li i.round.green {
+  border-color: #03ac2f;
+}
+.restaurants_elem ul li span {
+  float: right;
+  width: 81px;
+}
+.restaurants_elem ul li b.r {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 12.5px;
+  top: 50%;
+  right: 0;
+  margin: -6.25px 0 0 0;
 }
 .cash-box {
   background: #fff;
@@ -1022,6 +1153,11 @@ aside.active {
   padding: 0 30px;
   color: #fff;
 }
+.popup_wrapper .popup i.close1 {
+  position: absolute;
+  top: 28px;
+  left: 17.5px;
+}
 .popup_wrapper .popup .modw {
   text-align: center;
   color: #000;
@@ -1055,6 +1191,90 @@ aside.active {
 }
 .popup_wrapper .popup .modw .db a:last-child {
   float: right;
+}
+.popup_wrapper .popup .multi {
+  margin: 0 -10px 0 0;
+}
+.popup_wrapper .popup .multi h2 {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 13px 0 36px;
+}
+.popup_wrapper .popup .multi ul {
+  line-height: 16.5px;
+}
+.popup_wrapper .popup .multi ul div.icon {
+  float: left;
+  width: 26px;
+  padding: 2px 0 0 0;
+}
+.popup_wrapper .popup .multi ul li {
+  margin: 0 0 17px;
+}
+.popup_wrapper .popup .multi ul h4 {
+  font-size: 17px;
+}
+.popup_wrapper .popup .multi ul p {
+  font-size: 12px;
+}
+.popup_wrapper .popup .achiv p {
+  text-align: center;
+  color: #ff4800;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 18px 0 0 0;
+}
+.popup_wrapper .popup .zv_wrap {
+  margin: -5px -30px 0;
+}
+.popup_wrapper .popup .buy {
+  padding: 20px 0 0 0;
+  color: #fff;
+}
+.popup_wrapper .popup .buy h2 {
+  font-size: 19px;
+  font-weight: bold;
+}
+.popup_wrapper .popup .buy p {
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0 0 20px;
+}
+.popup_wrapper .popup .buy ul.checklist li {
+  color: #fff;
+}
+.popup_wrapper .popup .buy ul.checklist li span {
+  color: #ff5a34;
+}
+.popup_wrapper .popup .label {
+  font-size: 17px;
+  color: #ff4800;
+  margin: 0 -20px;
+  line-height: 22px;
+  text-align: center;
+}
+.popup_wrapper .popup .label span {
+  display: block;
+}
+.popup_wrapper .popup .label strong {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.popup_wrapper .popup .pop_carusel .owl-controls {
+  margin: 5px 0 20px;
+}
+.popup_wrapper .popup .pop_carusel .owl-controls .owl-page span {
+  background: #fff;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+}
+.popup_wrapper .popup .pop_carusel .owl-controls .owl-page.active span {
+  background: none;
+  border: 1px solid #f19700;
 }
 @media (-webkit-min-device-pixel-ratio: 2) {
   .box {
